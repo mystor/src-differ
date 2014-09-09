@@ -8,25 +8,6 @@ def label_distance(l1, l2):
     else:
         return 1
 
-from zss import simple_distance, Node
-
-A = (
-    Node("f")
-        .addkid(Node("a")
-            .addkid(Node("h"))
-            .addkid(Node("c")
-                .addkid(Node("l"))))
-        .addkid(Node("e"))
-    )
-B = (
-    Node("f")
-        .addkid(Node("a")
-            .addkid(Node("d"))
-            .addkid(Node("c")
-                .addkid(Node("b"))))
-        .addkid(Node("e"))
-    )
-
 def to_dumb_nodes(tree):
     n = Node(get_label(tree))
     for c in get_children(tree):
