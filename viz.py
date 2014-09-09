@@ -30,4 +30,4 @@ def visit(node):
 
 if __name__ == '__main__':
     visit(make_tree(sys.argv[1]))
-    dot.render('out/viz', view=True)
+    dot.render('viz', view=True)
